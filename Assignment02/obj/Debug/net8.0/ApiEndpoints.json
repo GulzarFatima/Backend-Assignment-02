@@ -1,0 +1,97 @@
+[
+  {
+    "ContainingType": "Assignment02.Controllers.CupcakeParty",
+    "Method": "CalculateScore",
+    "RelativePath": "api/J1/CupcakeParty",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "regular",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "small",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Assignment02.Controllers.Delivedroid",
+    "Method": "CalculateScore",
+    "RelativePath": "api/J1/Delivedroid",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collisions",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "deliveries",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Assignment02.J2.ChilliPeppers",
+    "Method": "CalculateSpiciness",
+    "RelativePath": "api/J2/CalculateSpiciness",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Assignment02.J2.DusaYobi",
+    "Method": "CalculateDusaSize",
+    "RelativePath": "api/J2/DusaYobis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dusa",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "yobis",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Assignment02.Controllers.J3_DecodeSecret",
+    "Method": "DecodeFormulas",
+    "RelativePath": "api/J3/DecodedFormula",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formulas",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

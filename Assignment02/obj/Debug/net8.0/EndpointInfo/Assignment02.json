@@ -1,0 +1,159 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Assignment02",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/J2/CalculateSpiciness": {
+      "get": {
+        "tags": [
+          "ChilliPeppers"
+        ],
+        "parameters": [
+          {
+            "name": "input",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/J1/CupcakeParty": {
+      "post": {
+        "tags": [
+          "CupcakeParty"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "regular": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "small": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "regular": {
+                  "style": "form"
+                },
+                "small": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/J1/Delivedroid": {
+      "post": {
+        "tags": [
+          "Delivedroid"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "collisions": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "deliveries": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "collisions": {
+                  "style": "form"
+                },
+                "deliveries": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/J2/DusaYobis": {
+      "get": {
+        "tags": [
+          "DusaYobi"
+        ],
+        "parameters": [
+          {
+            "name": "dusa",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "yobis",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/J3/DecodedFormula": {
+      "get": {
+        "tags": [
+          "J3_DecodeSecret"
+        ],
+        "parameters": [
+          {
+            "name": "formulas",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}
