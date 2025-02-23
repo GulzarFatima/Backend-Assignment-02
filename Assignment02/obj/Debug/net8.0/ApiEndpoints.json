@@ -42,15 +42,15 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Assignment02.J2.ChilliPeppers",
+    "ContainingType": "Assignment02.J2.ChiliPeppers",
     "Method": "CalculateSpiciness",
-    "RelativePath": "api/J2/CalculateSpiciness",
+    "RelativePath": "api/J2/ChiliPeppers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "input",
+        "Name": "ingredients",
         "Type": "System.String",
         "IsRequired": false
       }

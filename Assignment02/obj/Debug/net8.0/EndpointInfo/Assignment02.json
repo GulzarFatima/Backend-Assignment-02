@@ -5,14 +5,14 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/J2/CalculateSpiciness": {
+    "/api/J2/ChiliPeppers": {
       "get": {
         "tags": [
-          "ChilliPeppers"
+          "ChiliPeppers"
         ],
         "parameters": [
           {
-            "name": "input",
+            "name": "ingredients",
             "in": "query",
             "schema": {
               "type": "string"

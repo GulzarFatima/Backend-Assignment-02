@@ -6,6 +6,21 @@ namespace Assignment02.Controllers
     [ApiController]
     public class J3_DecodeSecret : ControllerBase
     {
+        /// <summary>
+        /// Decode secret formula to intrsuctions for directions. 
+        /// </summary>
+        /// <param name="formulas">
+        /// A comma-separated list of 5 numbers,
+        /// where: the first two digits determine the direction (Right/Left/Same as last direction).
+        /// The last three digits determine the number of steps to take in that direction.     
+        /// "99999" is the end of the input and should not be processed.
+        /// </param>
+        /// </returns>
+        /// <example>
+        /// Request: api/J3/DecodedFormula?formulas=57234,00907,34100,99999
+        /// Response: ["right 234", "right 907", "left 100"]
+        /// </example>
+      
         [HttpGet("DecodedFormula")]
         public IActionResult DecodeFormulas([FromQuery] string formulas)
         {

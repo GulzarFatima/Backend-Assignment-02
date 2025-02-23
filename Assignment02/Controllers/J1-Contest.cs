@@ -7,9 +7,19 @@ namespace Assignment02.Controllers
     public class CupcakeParty : ControllerBase
     {
         /// <summary>
-        /// <param name="Regular"></param>
-        /// <param name="Small"></param>
-        /// <returns> 
+        /// Calculates the number of leftover cupcakes after distributing one to each of 28 students.
+        /// </summary>
+        /// <param name="Regular"></param> Regular box contains 8 cupcakes.
+        /// <param name="Small"></param> Small box contains 3 cupcakes.
+        /// <returns> Number of cupcakes left after each student gets one.
+        /// <example>
+        /// Request:
+        /// POST api/J1/CupcakeParty
+        /// (form-data) Regular=2, Small=5
+        /// 
+        /// Response:
+        /// 3
+        /// </example> 
 
         [HttpPost("CupcakeParty")]
         public IActionResult CalculateScore([FromForm] int regular, [FromForm] int small)

@@ -5,7 +5,7 @@ namespace Assignment02.J2
 {
     [Route("api/J2")]
     [ApiController]
-    public class ChilliPeppers : ControllerBase
+    public class ChiliPeppers : ControllerBase
     {
         Dictionary<string, int> peppers = new Dictionary<string, int>()
                         {
@@ -20,23 +20,22 @@ namespace Assignment02.J2
         /// <summary>
         /// Calculates the total spiciness level based on the selected chili peppers.
         /// </summary>
-        /// <param name="input">A comma-separated list of chili pepper names.</param>
+        /// <param name="ingredients">A comma-separated list of chili pepper names.</param>
         /// <returns>
-        /// Returns an HTTP 200 OK response with the total spiciness (sum of Scoville Heat Units) of the selected peppers.
-        /// If an invalid pepper name is included, it will cause an error.
+        /// Returns total spiciness (sum of Scoville Heat Units) of the selected peppers.
         /// </returns>
         /// <example>
         /// Request:
-        /// GET /api/J2/CalculateSpiciness?input=Poblano,Serrano,Thai
+        /// GET /api/J2/ChiliPeppers?Ingredients=Poblano,Cayenne,Thai,Poblano
         /// 
         /// Response:
-        /// 91500
+        /// 118000
         /// </example>
-        
-        [HttpGet("CalculateSpiciness")]
-        public IActionResult CalculateSpiciness([FromQuery] string input)
+
+        [HttpGet("ChiliPeppers")]
+        public IActionResult CalculateSpiciness([FromQuery] string ingredients)
         {
-            var chosenPeppers = input.Split(',');
+            var chosenPeppers = ingredients.Split(',');
             int totalSpiciness = 0;
 
             foreach (string pepper in chosenPeppers)

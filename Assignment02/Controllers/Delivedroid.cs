@@ -7,10 +7,22 @@ namespace Assignment02.Controllers
     public class Delivedroid : ControllerBase
     {
         /// <summary>
-        /// <param name="collision"></param>
-        /// <param name="delivery"></param>
-        /// <returns> totalpoints + bonus points(500) if deliveries more than collisions.
-        /// <example> Collisions=2 & Deliveries=5 Return= 730 = </example>
+        /// Calculates final score of Delivedroid based on the number of collisions and deliveries.
+        /// </summary>
+        ///
+        /// <param name="collisions">Number of collisions (each deducts 10 points).</param>
+        /// <param name="delivery">Number of packages delivered (each adds 50 points).</param>
+        /// <returns> 
+        /// totalpoints + bonus points(500) if deliveries are more than collisions.
+        /// <example>
+        /// Request:
+        /// POST api/J1/Delivedroid
+        /// Content-Type: application/x-www-form-urlencoded
+        /// Body: collisions=2&deliveries=5
+        /// 
+        /// Response:
+        /// 730
+        /// </example>
 
         [HttpPost("Delivedroid")]
         public IActionResult CalculateScore([FromForm] int collisions, [FromForm] int deliveries)
