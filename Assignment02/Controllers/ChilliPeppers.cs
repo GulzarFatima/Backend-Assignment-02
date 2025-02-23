@@ -14,7 +14,7 @@ namespace Assignment02.J2
                             { "Serrano" , 15500 },
                             { "Cayenne" , 40000 },
                             { "Thai" , 75000 },
-                            { "Habenero" , 125000 },
+                            { "Habanero" , 125000 },
 
                         };
         /// <summary>
